@@ -1,0 +1,21 @@
+<meta charset="utf-8">]
+<script>
+	function truncate(string, maxlength) {
+		let outString = '';
+		if(string.length > maxlength){
+			
+			for(i= 0 ; i<maxlength;i++){
+				outString += string[i];
+			}
+			outString += '...';
+		}
+		else if(string.length<= maxlength) outString = string;
+
+		alert(outString);
+		console.log(outString);
+	}
+	let message = prompt('Введите текст');
+	let length = +prompt('Введите количество символов');
+	truncate(message,length);
+
+</script>
